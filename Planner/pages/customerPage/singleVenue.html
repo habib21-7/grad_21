@@ -30,7 +30,6 @@
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link px-0 px-lg-3 rounded" href="">Home</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link  px-0 px-lg-3 rounded" href="">Vendors</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link  px-0 px-lg-3 rounded" href="">My Events</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link  px-0 px-lg-3 rounded" href="">Payments</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link  px-0 px-lg-3 rounded" href=""><i class="fas fa-sign-out-alt">Log Out</i></a></li>
 
                 </ul>
@@ -69,7 +68,7 @@
             </div>
             <div class="row p-5">
                 <div style="clear: both; padding: 10px 0;">
-                    <input type="button" class="btn btn-secondary btn-lg" style="float: left; font-size: 18px; height: 44px; width: 250px;" title="Request Pricing" value="Request Pricing" >
+                    <input type="button" class="btn btn-secondary btn-lg" style="float: left; font-size: 18px; height: 44px; width: 250px;" title="Request Pricing" data-bs-toggle="modal" data-bs-target="#exampleModal1" value="Request Pricing" >
 
                         <div style="float: left; padding-left: 25px;" class="eve-price-highlight">
                             <div class="fa fa-bolt" style="color: #FFCC00; font-size: 20px; padding-top: 10px;" aria-hidden="true"></div> 
@@ -307,6 +306,98 @@
                 </div>
             </div>
         </div>
+
+        <div class="row p-5 shadow-lg mb-5 bg-body rounded">
+            <div class="col-xs-12">
+                <div class="detail-section">
+                    <h2 style="font-weight: 300; color:#666">Recomanded Items</h2>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="cards-wrapper">
+                                <div class="card d-none d-md-block">
+                                    <a href="/Event_Planner_FrontEnd/Planner/pages/customerPage/singleVenue.html" style="text-decoration: none;">
+                                      <div class="card" style="width: 25rem;">
+                                        <img src="/Event_Planner_FrontEnd/Planner/assets/images/g-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text" style="color: black;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Requset Pricing</a>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="card d-none d-md-block">
+                                    <a href="/Event_Planner_FrontEnd/Planner/pages/customerPage/singleVenue.html" style="text-decoration: none;">
+                                      <div class="card" style="width: 25rem;">
+                                        <img src="/Event_Planner_FrontEnd/Planner/assets/images/g-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text" style="color: black;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Requset Pricing</a>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="card d-none d-md-block">
+                                    <a href="/Event_Planner_FrontEnd/Planner/pages/customerPage/singleVenue.html" style="text-decoration: none;">
+                                      <div class="card" style="width: 25rem;">
+                                        <img src="/Event_Planner_FrontEnd/Planner/assets/images/g-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text" style="color: black;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Requset Pricing</a>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                          </div>
+                    </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    
+                </div>
+            </div>
+        </div>
+
+                            <!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel" style="font-weight: 900; color: black;">Venue Request</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                  <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="inputType" class="form-label">Availability Time *</label>
+                      <select class="form-select" aria-label="Default">
+                        <option value="1">6-8</option>
+                      </select>
+                    </div>
+                  </form>
+               </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"  data-bs-dismiss="modal">Send Request</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
     </div>
     </section>
      
